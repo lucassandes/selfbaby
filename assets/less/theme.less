@@ -1,0 +1,131 @@
+
+#logo {
+  margin-top: 3px;
+
+}
+#header {
+  height: 5em;
+  border-bottom: 5px solid #094c89;
+  #nav {
+    ul{
+      li{
+        font-size: 1.5em;
+        font-weight: bold;
+        font-style: italic;
+        letter-spacing: -0.05em;
+        text-transform: uppercase;
+        a{
+          color: black;
+
+        }
+      }
+    }
+  }
+}
+
+#empresa {
+  background: url("images/overlay.png"), url("../../images/empresa.jpg");
+  background-size: 256px 256px, cover;
+  background-attachment: fixed, fixed;
+  background-position: top left, center center;
+}
+
+
+#negocio {
+  background: url("images/overlay.png"), url("../../images/negocio.jpg");
+  background-size: 256px 256px, cover;
+  background-attachment: fixed, fixed;
+  background-position: top left, center center;
+  .box {
+
+  }
+}
+
+#marcas {
+  background: url("images/overlay.png"), url("../../images/marcas.jpg");
+  background-size: 256px 256px, cover;
+  background-attachment: fixed, fixed;
+  background-position: top left, center center;
+}
+
+#contato {
+  .container-contato {
+    margin-left: 0;
+  }
+}
+/* Wide */
+@media screen and (max-width: 1920px) {
+
+  p{
+    font-size: 14pt;
+    line-height: 16pt;
+  }
+
+
+  #negocio {
+    .box {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+
+}
+/* Normal */
+@media screen and (max-width: 1680px) {
+  body, input, textarea, select {
+    //font-size: 15pt;
+  }
+  #negocio {
+    .box {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+
+/* Narrow */
+@media screen and (max-width: 480px) {
+
+
+  body, input, textarea, select {
+   // font-size: 13pt;
+  }
+
+  #negocio {
+    .box {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+/* Narrower */
+@media screen and (max-width: 1000px) {
+
+  body, input, textarea, select {
+   // font-size: 13pt;
+  }
+  #header {
+    #nav {
+      ul{
+        li{
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+  #negocio {
+    .box {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+/* Mobile */
+@media screen and (max-width: 736px) {
+  #negocio {
+    .box {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
