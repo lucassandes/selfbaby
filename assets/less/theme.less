@@ -28,6 +28,17 @@
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, center center;
+
+  h3 {
+    padding: 20px;
+    text-align: center;
+    font-weight: normal;
+    background-color:#00377c; ;
+    a {
+      color: white
+    }
+
+  }
 }
 
 
@@ -47,10 +58,59 @@
   background-attachment: fixed, fixed;
   background-position: top left, center center;
 }
+/*
+#catalogo {
+  background: url("../../images/catalogo.jpg");
+  background-size:  cover;
+  background-attachment: fixed;
+  background-position:  center center;
+}
+*/
+
+#catalogo {
+  img.full-width {
+    width:100%
+  }
+
+  text-align: center;
+  h3 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2em;
+    margin: 30px;
+    a {
+      color: #104785;
+    }
+
+  }
+}
+
+#footer{
+  background: #104785;
+
+  p{
+    font-style: 2em;
+    color: white;
+    text-align: center;
+    margin: 1.5em;
+  }
+}
+
 
 #contato {
   .container-contato {
     margin-left: 0;
+  }
+  .box{
+    background: none;
+  }
+  form {
+    background: #ebebeb;
+    padding:20px;
+    margin-right: 20px;
+    input[type="text"], textarea, input[type="email"] {
+      background: white;
+    }
   }
 }
 /* Wide */
@@ -126,6 +186,15 @@
     .box {
       width: 90%;
       margin: 0 auto;
+    }
+  }
+
+  #contato {
+
+    form {
+
+      margin-right: 0px;
+
     }
   }
 }

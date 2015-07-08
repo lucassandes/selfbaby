@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE HTML>
 <!--
 	Big Picture by HTML5 UP
@@ -9,7 +7,7 @@
 -->
 <html>
 <head>
-    <title>Big Picture by HTML5 UP</title>
+    <title>Selfbaby</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--[if lte IE 8]>
@@ -168,13 +166,13 @@
                 <!-- Contact Form -->
 
 
-                <form method="post" action="#" id="formulario">
+                <form  method="post" action="enviar.php"id="formulario">
                     <div class="row 50%">
-                        <div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Nome"/></div>
-                        <div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email"/></div>
+                        <div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Nome" required/></div>
+                        <div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email" required/></div>
                     </div>
                     <div class="row 50%">
-                        <div class="12u"><textarea name="message" placeholder="Messagem" rows="6"></textarea></div>
+                        <div class="12u"><textarea name="message" placeholder="Messagem" rows="6" required></textarea></div>
                     </div>
                     <div class="row">
                         <div class="12u">
@@ -183,6 +181,8 @@
                             </ul>
                         </div>
                     </div>
+
+
                 </form>
 
             </div>
