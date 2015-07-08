@@ -7,8 +7,8 @@ else $quebra_linha = "\n";
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $from = 'lucassandes92@gmail.com'; //autosender
-    $to = 'lucassandes92@gmail.com';
+    $from = 'mensageiro@selfbaby.com.br'; //autosender
+    $to = 'milena@selfbaby.com.br';
     $subject = 'Mensagem enviada do site Selfbaby';
 
 
