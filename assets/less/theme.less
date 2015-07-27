@@ -3,18 +3,19 @@
   margin-top: 3px;
 
 }
+
 #header {
   height: 5em;
   border-bottom: 5px solid #094c89;
   #nav {
-    ul{
-      li{
+    ul {
+      li {
         font-size: 1.5em;
         font-weight: bold;
         font-style: italic;
         letter-spacing: -0.05em;
         text-transform: uppercase;
-        a{
+        a {
           color: black;
 
         }
@@ -28,18 +29,54 @@
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, center center;
+  padding-bottom: 0;
 
   h3 {
     padding: 20px;
     text-align: center;
     font-weight: normal;
-    background-color:#00377c; ;
+    background-color: #00377c;
+    margin-bottom: 0;
+
     a {
       color: white
     }
 
   }
 }
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
 
 
 #negocio {
@@ -58,6 +95,7 @@
   background-attachment: fixed, fixed;
   background-position: top left, center center;
 }
+
 /*
 #catalogo {
   background: url("../../images/catalogo.jpg");
@@ -69,7 +107,7 @@
 
 #catalogo {
   img.full-width {
-    width:100%
+    width: 100%
   }
 
   text-align: center;
@@ -85,10 +123,10 @@
   }
 }
 
-#footer{
+#footer {
   background: #104785;
 
-  p{
+  p {
     font-style: 2em;
     color: white;
     text-align: center;
@@ -96,31 +134,30 @@
   }
 }
 
-
 #contato {
   .container-contato {
     margin-left: 0;
   }
-  .box{
+  .box {
     background: none;
   }
   form {
     background: #ebebeb;
-    padding:20px;
+    padding: 20px;
     margin-right: 20px;
     input[type="text"], textarea, input[type="email"] {
       background: white;
     }
   }
 }
+
 /* Wide */
 @media screen and (max-width: 1920px) {
 
-  p{
+  p {
     font-size: 14pt;
     line-height: 16pt;
   }
-
 
   #negocio {
     .box {
@@ -130,11 +167,13 @@
   }
 
 }
+
 /* Normal */
 @media screen and (max-width: 1680px) {
   body, input, textarea, select {
     //font-size: 15pt;
   }
+
   #negocio {
     .box {
       width: 60%;
@@ -146,9 +185,8 @@
 /* Narrow */
 @media screen and (max-width: 480px) {
 
-
   body, input, textarea, select {
-   // font-size: 13pt;
+    // font-size: 13pt;
   }
 
   #negocio {
@@ -158,21 +196,24 @@
     }
   }
 }
+
 /* Narrower */
 @media screen and (max-width: 1000px) {
 
   body, input, textarea, select {
-   // font-size: 13pt;
+    // font-size: 13pt;
   }
+
   #header {
     #nav {
-      ul{
-        li{
+      ul {
+        li {
           font-size: 1.3em;
         }
       }
     }
   }
+
   #negocio {
     .box {
       width: 80%;
@@ -180,6 +221,7 @@
     }
   }
 }
+
 /* Mobile */
 @media screen and (max-width: 736px) {
   #negocio {

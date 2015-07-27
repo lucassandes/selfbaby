@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="assets/css/ie/v8.css"/><![endif]-->
     <!--[if lte IE 8]>
     <script src="assets/css/ie/respond.min.js"></script><![endif]-->
+
+
 </head>
 <body>
 
@@ -44,25 +46,71 @@
 
 </header>
 
-<!-- Intro -->
-<section id="intro" class="main style1 dark fullscreen">
+<!-- Intro
+<section id="intro" class="main style1 dark ">
+
+    <div class="fadein">
+
+
+        <img class="image fit full-width" src="http://farm3.static.flickr.com/2610/4148988872_990b6da667.jpg">
+        <img class="image fit full-width" src="http://farm3.static.flickr.com/2597/4121218611_040cd7b3f2.jpg">
+        <img class="image fit full-width" src="http://farm3.static.flickr.com/2531/4121218751_ac8bf49d5d.jpg">
+    </div>
+
     <div class="content container 75%">
         <header>
 
         </header>
+
+        <!--<p>Welcome to <strong>Big Picture</strong> a responsive site template designed
+            by <a href="http://html5up.net">HTML5 UP</a>, built on <strong><a
+                    href="http://getskel.com">Skel</a></strong>,
+            and released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0
+                license</a>.</p>
+<footer>
+    <a href="#empresa" class="button style2 down">More</a>
+</footer>
+</div>
+</section>
+
+-->
+<section id="intro" class="main  ">
+
+
+
+    <div class="content">
+        <header>
+
+        </header>
+        <ul class="rslides" id="slider1">
+            <li> <img class="image fit full-width" src="images/charminho.jpg"></li>
+            <li><img class="image fit full-width" src="images/JusticeLeague.jpg"></li>
+            <li><img class="image fit full-width" src="images/Lamborghini.jpg"></li>
+            <li><img class="image fit full-width" src="images/Maxibaby.jpg"></li>
+        </ul>
+
+<!--
+        <div class="fadein">
+            <img class="image fit full-width" src="images/charminho.jpg">
+            <img class="image fit full-width" src="images/JusticeLeague.jpg">
+            <img class="image fit full-width" src="images/Lamborghini.jpg">
+            <img class="image fit full-width" src="images/Maxibaby.jpg">
+        </div>-->
+
         <!--<p>Welcome to <strong>Big Picture</strong> a responsive site template designed
             by <a href="http://html5up.net">HTML5 UP</a>, built on <strong><a
                     href="http://getskel.com">Skel</a></strong>,
             and released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0
                 license</a>.</p>-->
-        <footer>
+
+        <!--<footer>
             <a href="#empresa" class="button style2 down">More</a>
-        </footer>
+        </footer> -->
     </div>
 </section>
 
 <!-- empresa -->
-<section id="empresa" class="main style2 left dark fullscreen">
+<section id="empresa" class="main style2 left dark ">
     <div class="content box style2">
         <header>
             <h2>Empresa</h2>
@@ -89,7 +137,7 @@
     </div>
 
    <!-- <a href="#negocio" class="button style2 down anchored">Next</a>-->
-    <h3>Rua Maria Marcolina, 768 - lojas 22b e 23b, 10º andar - Shopping Brascol- Brás, SP - CEP 03011-000 - Tel. 11 3937 6365</h3>
+    <h3>COTIA – SP – Rua Adib Auada, 35 – Conjunto 203 A – Granja Viana – Cep 06710-700 </h3>
 </section>
 
 
@@ -97,7 +145,7 @@
 <section id="negocio" class="main style3   dark ">
     <div class="content box style3 centered">
         <header>
-            <h2>Empresa</h2>
+            <h2>Negócios</h2>
         </header>
         <p>Seu amplo know-how com os próprios negócios permitiu à Self Baby prestações de serviços como importações por
             encomenda e importações por conta e ordem.</p>
@@ -249,5 +297,20 @@
 
     $("#formulario").css("min-height",imgHeight);
 </script>
+
+<script src="assets/js/responsiveslides.js"></script>
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+        // Slideshow 1
+        $("#slider1").responsiveSlides({
+            speed: 800
+        });
+    });
+</script>
+
+
+
+
 </body>
 </html>
